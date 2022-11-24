@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Poppins', sans-serif !important;
+    text-align: justify;
+      text-justify: inter-word;
+}
+/* font-family: 'Poppins', sans-serif; */
+h1,h2,h3,h4,h5,p{
+    font-family: 'Poppins', sans-serif;
+}
+/*---------nav-bar------*/
+#nav-img{
+    width: 20%;
+}
+.navbar{
+    /*complete nav color*/
+          background-color:transparent;
+     color: #1e1e1e !important;
+    /* visibility: hidden; */
+    text-align: center;
+    justify-content: center !important;
+}
+.navbar-nav{
+       background-color:transparent;
+       width: 100%;  
+        color: #1e1e1e !important; 
+    
+}
+
+.nav-item{
+    color: #1e1e1e !important;
+    padding: 20px 40px;
+    font-weight: 600;
+}
+.nav-link{
+    
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #1e1e1e !important;
+}
+.nav-item:hover {
+    border-radius: 15px;
+     background-color: #901E23;
+      transition: all 0.6s ease 0s;
+}
+.nav-link:hover{
+    color: #fff !important;
+    transition: all 0.6s ease 0s;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+color: transparent !important;
+}
+.navbar .navbar-toggler:focus{
+color: transparent;
+}
+
+.dropdown-item{
+    margin: 5% 5% 0;
+    
+}
+
+/*------------main banner------------*/
+.main-banner h4{ display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.main-banner h4 b{
+  color: #901E23;
+}
+.main-banner{
+    background-image: url('images/banner.jpg');
+    height: 100vh;
+    width: 100%;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.banner-text{
+  padding: 20% 0 0 7% !important;
+  width: 40%;
+  line-height: 1.5;
+  text-justify: newspaper;
+}
+.banner-text p{
+    height: auto;
+   
+  font-size: 1rem;
+}
+/*-----------end of banner-----------*/
+/*-----------about us-----------------*/
+.about-us{
+    height:50vh;
+    padding: 5%;
+}
+.about-us h4 b{
+  color: #901E23;
+}
+.about-us h5{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px !important;
+    color: #901E23;
+    writing-mode: vertical-rl;
+   transform: scale(-1, -1);
+
+}
+#img1{
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+#img2{
+    display: flex;
+    width: 40%;
+    height: auto;
+}
+#img3{
+    display: flex;
+    width: 30%;
+    height: auto;
+}
+/*-----------end of about us-----------------*/
+#map{
+    height: 30vh;
+    margin-top: 0;
+    margin-bottom: 20%;
+}
+
+footer{
+    height: 50vh;
+   
+}
+#footer-img{
+    
+    width: 50%;
+}
+.footer{padding: 3%;}
+.footer-content{padding-top: 3%;}
+footer h5{
+    margin-top: 5% ;
+    margin-bottom: 5% ;
+}
+footer h5 a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 1rem;
+}
+footer h5 a:hover{
+    color: #901E23;
+}
