@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
 
-    
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     
@@ -25,6 +25,12 @@
     <title>White Rose</title>
 </head>
 <body>
+     <div class="intro">
+     <h1 class="logo-header">
+    <span class="logo">Best Inn Erbil</span>
+    <span class="logo" style="color:#1E1E1E ;"> 1</span></h1>
+    
+    </div>
     <!---navbar-->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -58,7 +64,8 @@
     </div>
     <section class="main-banner">
       
-<div class="banner-text">
+<div class="banner-text" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
  
   <h4><b>Best</b> Inn Erbil 1 Hotel</h4>
 
@@ -69,11 +76,13 @@
     <section class="about-us">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
             <h5>About us</h5>
             
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
             <h4><b>Best</b> Inn Erbil 1 Hotel</h4>
 <p>
 best inn erbil is a landmark five star hotel featuring 60 well appointed rooms and suites, one food & beverage outlets, one Grand Ballroom that fits for up to 300 guests and 4 small meeting rooms for conferences and events. All the meeting rooms are equipped with the latest audio-visual equipments, translation system and high speed internet connection. The property is strategically located close to the business and diplomatic area of the city. Ten minutes drive from Erbil International Airport and ten minutes to the city center, the historical Citadel, bazaars and malls. best inn erbil is the appropriate destination for business travelers and corporate meetings. 
@@ -83,7 +92,8 @@ Opened since 2011.
         </div>
       </div>
     </section>
-      <section id="map">
+      <section id="map" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
         <div class="container-fluid d-flex justify-content-center align-items-center">
 
         
@@ -93,7 +103,8 @@ Opened since 2011.
     <!-------footer------->
     <footer class="footer">
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
     <div class="col-lg-2">
       <img id="footer-img" src="images/bestInnErbbil.png" alt="white-rose-logo">
     </div>
@@ -112,7 +123,7 @@ Opened since 2011.
     </footer>
     <!-------end of footer------->
     <!-------------JS Scripts--------------->
-   <!-- <script src="app.js"></script> -->
+   <script src="app.js"></script>
     
     <script>
   AOS.init();

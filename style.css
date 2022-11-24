@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* overflow: hidden; */
     box-sizing: content-box;
     font-family: 'Poppins', sans-serif !important;
     text-align: justify;
@@ -9,6 +10,41 @@
 /* font-family: 'Poppins', sans-serif; */
 h1,h2,h3,h4,h5,p{
     font-family: 'Poppins', sans-serif;
+}
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #901E23;
+    transition: 1s;
+}
+.logo-header{
+   font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff !important;
+}
+.logo{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0.5;
+}
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
 }
 /*---------nav-bar------*/
 #nav-img{
@@ -127,8 +163,8 @@ color: transparent;
 
 /*-----------services-----------------*/
 .services{
-   height:80vh;
-    padding: 5%; 
+   height:100vh;
+    padding: 4%; 
 }
 .services h4 b{
   color: #901E23;
@@ -250,6 +286,7 @@ color: transparent;
 }
 /*-------------end of CEO-----------------------*/
 footer{
+    bottom: 0 !important;
     height: 50vh;
 }
 #footer-img{

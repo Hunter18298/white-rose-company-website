@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
 
-    
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     
@@ -25,6 +25,10 @@
     <title>White Rose</title>
 </head>
 <body>
+      <div class="intro">
+     <h1 class="logo-header">
+    <span class="logo">Best Inn Erbil</span>
+    <span class="logo" style="color:#1E1E1E ;"> 2</span></h1></div>
     <!---navbar-->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -58,7 +62,8 @@
     </div>
     <section class="main-banner">
       
-<div class="banner-text">
+<div class="banner-text" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
  
   <h4><b>Best</b> Inn Erbil 2 Hotel</h4>
 
@@ -69,11 +74,13 @@
     <section class="about-us">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2">
+          <div class="col-lg-2" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">
             <h5>About us</h5>
             
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
             <h4><b>Best</b> Inn Erbil 2 Hotel</h4>
 <p>
 The elegant design, comfort and luxury of each room gives each room its own personality and the spaciousness of our rooms provides the ideal environment. 
@@ -90,7 +97,8 @@ Opened since 2017
         </div>
       </div>
     </section>
-     <section id="map">
+     <section id="map" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
         <div class="container-fluid d-flex justify-content-center align-items-center">
 
         
@@ -100,7 +108,8 @@ Opened since 2017
     <!-------footer------->
     <footer class="footer">
 <div class="container-fluid">
-  <div class="row">
+  <div class="row" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+     data-aos-duration="2500">
     <div class="col-lg-2">
       <img id="footer-img" src="images/bestInnErbbil.png" alt="white-rose-logo">
     </div>
@@ -119,7 +128,7 @@ Opened since 2017
     </footer>
     <!-------end of footer------->
     <!-------------JS Scripts--------------->
-   <!-- <script src="app.js"></script> -->
+   <script src="app.js"></script>
     
     <script>
   AOS.init();
