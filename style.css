@@ -4,7 +4,7 @@
     /* overflow: hidden; */
     box-sizing: content-box;
     font-family: 'Poppins', sans-serif !important;
-    text-align: justify;
+ 
       text-justify: inter-word;
 }
 /* font-family: 'Poppins', sans-serif; */
@@ -87,12 +87,14 @@ h1,h2,h3,h4,h5,p{
     transition: all 0.6s ease 0s;
 }
 .navbar .navbar-toggler[aria-expanded="true"] {
-color: transparent !important;
+color: #1e1e1e !important;
 }
 .navbar .navbar-toggler:focus{
-color: transparent;
+color: #000;
 }
-
+.navbar .navbar-toggler{
+color: #000 !important;
+}
 .dropdown-item{
     margin: 5% 5% 0;
     
@@ -116,6 +118,7 @@ color: transparent;
 
 }
 .banner-text{
+       text-align: justify;
   padding: 20% 0 0 7% !important;
   width: 40%;
   line-height: 1.5;
@@ -133,9 +136,11 @@ color: transparent;
     padding: 5%;
 }
 .about-us h4 b{
+       text-align: justify;
   color: #901E23;
 }
 .about-us h5{
+       text-align: justify;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 10px !important;
@@ -167,9 +172,11 @@ color: transparent;
     padding: 4%; 
 }
 .services h4 b{
+    text-align: justify;
   color: #901E23;
 }
 .services h5{
+    text-align: justify;
     font-size: 2rem;
     font-weight: bold;
     margin-top: 3rem !important;
@@ -186,10 +193,12 @@ color: transparent;
     width: 40%;
 }
 .services-margin-text-vestel{
+    text-align: justify;
    
     margin-bottom: 15% !important;
 }
 .services-margin-text-bbErbil{
+    text-align: justify;
     margin-top: 8%;
     margin-bottom: 8%;
 }
@@ -225,6 +234,7 @@ color: transparent;
     background-size: cover;
 }
 .companies-box p{
+    text-align: justify;
     opacity: 0;
     z-index: 2;
     letter-spacing: 3px;
@@ -257,6 +267,8 @@ color: transparent;
 
 /*-------------CEO-----------------------*/
 .ceo{
+     
+   
     height: 50vh;
     padding: 5%;
 }
@@ -266,9 +278,10 @@ color: transparent;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-    border-radius: 1000%;
+    border-radius: 100%;
 }
 .ceo p{
+    text-align: justify;
    
     font-weight: bold;
     font-size: 2rem;
@@ -280,13 +293,14 @@ color: transparent;
     color:  #901E23;
 }
 .ceo span b{
+    text-align: justify;
     letter-spacing: 0.3rem;
     font-size: 1.5rem;
     color: #1e1e1e;
 }
 /*-------------end of CEO-----------------------*/
 footer{
-    bottom: 0 !important;
+    
     height: 50vh;
 }
 #footer-img{
@@ -295,14 +309,110 @@ footer{
 .footer{padding: 3%;}
 .footer-content{padding-top: 3%;}
 footer h5{
+    text-align: justify;
     margin-top: 5% ;
     margin-bottom: 5% ;
 }
 footer h5 a{
+    text-align: justify;
     text-decoration: none;
     color: #1e1e1e;
     font-size: 1rem;
 }
 footer h5 a:hover{
+    text-align: justify;
     color: #901E23;
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .banner-text{
+     text-align: start;
+        width: 80%;
+
+    }
+    .about-us{
+        height: 100%;
+    }
+    .about-us h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+           .services{
+   height:100%;
+}
+  .services h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+  .ceo{
+         height:100%;
+    }
+    .ceo span{
+        font-size: 3rem;
+        letter-spacing: 0px;
+    }
+    .ceo span b{
+         font-size: 1rem;
+        letter-spacing: 0px;
+    }
+      footer{
+       height:100%;
+        bottom: 0 !important;
+   color: #000;
+    height: 2em;
+    left: 0;
+    position: relative; 
+    font-size: small;
+    width:100%;
+    }
+}
+/* Extra small devices (phones, up to 480px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row{
+        display: block;
+        
+    }
+    .banner-text{
+        text-align: start;
+    }
+    .about-us{
+        height: 100%;
+    }
+    .about-us h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+        .services{
+    height:100%;;
+}
+    .services h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+      .ceo{
+        height:100%;;
+    }
+    .ceo span{
+        letter-spacing: 0px;
+    }
+    .ceo span b{
+        letter-spacing: 0px;
+    }
+
+       footer{
+       height:100%;
+        bottom: 0 !important;
+   color: #000;
+    height: 2em;
+    left: 0;
+    position: relative; 
+    font-size: small;
+    width:100%;
+    }
+   
 }
