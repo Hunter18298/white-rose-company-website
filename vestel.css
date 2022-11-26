@@ -86,11 +86,17 @@ h1,h2,h3,h4,h5,p{
     color: #fff !important;
     transition: all 0.6s ease 0s;
 }
+.navbar-toggler-icon{
+   color: #000;
+}
 .navbar .navbar-toggler[aria-expanded="true"] {
-color: #1E1E1E !important;
+color: transparent !important;
 }
 .navbar .navbar-toggler:focus{
-color: #901E23;
+color: transparent;
+}
+.navbar .navbar-toggler{
+color: transparent!important;
 }
 
 .dropdown-item{

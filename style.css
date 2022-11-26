@@ -86,14 +86,17 @@ h1,h2,h3,h4,h5,p{
     color: #fff !important;
     transition: all 0.6s ease 0s;
 }
+.navbar-toggler-icon{
+   color: #000;
+}
 .navbar .navbar-toggler[aria-expanded="true"] {
-color: #1e1e1e !important;
+color: transparent !important;
 }
 .navbar .navbar-toggler:focus{
-color: #000;
+color: transparent;
 }
 .navbar .navbar-toggler{
-color: #000 !important;
+color: transparent!important;
 }
 .dropdown-item{
     margin: 5% 5% 0;
@@ -209,6 +212,25 @@ color: #000 !important;
     margin-bottom: 11%;
 }
 /*-------------end of services-----------------*/
+/*------------------count--------------*/
+#count{
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    /* background:url(images/); */
+    background-size: cover;
+    background-position: bottom;
+    color: #901E23;
+   
+    
+}
+
+.count-text{
+    font-family: 'Poppins' sans-serif;
+    font-weight: 700;
+    color: #1e1e1e;
+}
+
 /*-------------companies-------------------*/
 /* .companies{
     height: 100vh;
@@ -275,12 +297,10 @@ color: #000 !important;
     padding: 5%;
 }
 #circle-img{
-    width: 50%;
-   height: auto;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-    border-radius: 100%;
+    width: auto;
+   height: 50%;
+
+    
 }
 .ceo p{
     text-align: justify;
@@ -350,15 +370,23 @@ footer h5 a:hover{
         margin: 3% 0 5% 0 ;
     }
   .ceo{
-         height:100%;
+    text-align: center !important;
+         height:60vh;
     }
     .ceo span{
+        text-align: center !important;
         font-size: 3rem;
         letter-spacing: 0px;
     }
     .ceo span b{
          font-size: 1rem;
         letter-spacing: 0px;
+    }
+    #circle-img{
+       
+        height: 100%;
+        width: 50%;
+        
     }
       footer{
        height:100%;
@@ -397,13 +425,20 @@ footer h5 a:hover{
         margin: 3% 0 5% 0 ;
     }
       .ceo{
-        height:100%;;
+        width: 100%;
+        height:42vh;
     }
     .ceo span{
         letter-spacing: 0px;
     }
     .ceo span b{
         letter-spacing: 0px;
+    }
+        #circle-img{
+        align-items: center !important;
+        justify-content: center !important;
+        vertical-align: middle !important;
+        height: 30%;
     }
 
        footer{
