@@ -87,19 +87,124 @@ h1,h2,h3,h4,h5,p{
     transition: all 0.6s ease 0s;
 }
 .navbar .navbar-toggler[aria-expanded="true"] {
-color: transparent !important;
+color: #1E1E1E !important;
 }
 .navbar .navbar-toggler:focus{
-color: transparent;
+color: #901E23;
 }
 
 .dropdown-item{
     margin: 5% 5% 0;
     
 }
+/*-------------------------------*/
+/*--------------------------------------*/
+.main-banner{
+/* background: url(images/image8.png); */
+position: relative;
+height: auto;
+background-size: cover;
+background-position: center;
+/* padding-top: 280px ; */
+}
+.main-banner h1{
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFF;
+    margin: auto;
+    height: auto;
+   animation: toRight 3s ease; 
+}
+.banner-image{
+    width: 100%;
+    height: 100vh;
+      background-position: center;
+        background-size: cover;
+         background-repeat: no-repeat !important;
+  
 
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    opacity: 0;
+    animation: toOne 10s ease-in-out;
+}
+
+.bottom-banner{
+    position: absolute;
+        left: 0;
+        bottom: 0px !important;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #1E1E1E ;
+        opacity: 90%;
+        width: 100%;
+        height: 150px;
+        box-sizing: border-box;
+        padding: 5%;
+  
+        
+}
+.vertical{
+   animation: toRight 3s ease; 
+    border-left: solid 5px #B1B9B1;
+    height: 50px;
+}
+.bottom-banner h1{
+    animation: toRight 3s ease; 
+        position: relative;
+        z-index: 1;
+        display:inline-block ;
+       
+        font-style: normal;
+        font-weight: 700;
+        font-size:2.5rem;
+        text-align: center;
+        color: #901E23;
+}
+.bottom-banner h4 {
+    animation: toRight 3s ease; 
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+
+@keyframes toOne {
+    from{
+        opacity: 0;
+
+    }
+    to{opacity: 1;}
+    
+}
+@keyframes toRight {
+    from{
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+} 
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
 /*------------main banner------------*/
-.main-banner h4{ display: block;
+/* .main-banner h4{ display: block;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -125,7 +230,7 @@ color: transparent;
     height: auto;
    
   font-size: 1rem;
-}
+} */
 /*-----------end of banner-----------*/
 /*-----------about us-----------------*/
 .about-us{
@@ -187,4 +292,119 @@ footer h5 a{
 }
 footer h5 a:hover{
     color: #901E23;
+}
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .banner-text{
+     text-align: start;
+        width: 80%;
+
+    }
+    .vertical {
+        display: none;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+    .bottom-banner{
+        height: 35% ;
+        justify-content: start;
+    }
+    .bottom-banner h1{
+        font-size: 2rem;
+    }
+    .bottom-banner h4{
+        font-size: 1rem ;
+    }
+    .map{
+        height: 100%;
+    }
+    .about-us{
+        height: 100%;
+    }
+    .about-us h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+           .services{
+   height:100%;
+}
+  .services h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+  .ceo{
+         height:100%;
+    }
+    .ceo span{
+        font-size: 3rem;
+        letter-spacing: 0px;
+    }
+    .ceo span b{
+         font-size: 1rem;
+        letter-spacing: 0px;
+    }
+      footer{
+       height:100%;
+        bottom: 0 !important;
+   color: #000;
+    height: 2em;
+    left: 0;
+    position: relative; 
+    font-size: small;
+    width:100%;
+    }
+}
+/* Extra small devices (phones, up to 480px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row{
+        display: block;
+        
+    }
+    
+    .banner-text{
+        text-align: start;
+    }
+    .about-us{
+        height: 100%;
+    }
+    .about-us h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+    .map{
+        height: 100%;
+    }
+        .services{
+    height:100%;;
+}
+    .services h5{
+        writing-mode: horizontal-tb;
+        transform: scale(1,1);
+        margin: 3% 0 5% 0 ;
+    }
+      .ceo{
+        height:100%;;
+    }
+    .ceo span{
+        letter-spacing: 0px;
+    }
+    .ceo span b{
+        letter-spacing: 0px;
+    }
+
+       footer{
+       height:100%;
+        bottom: 0 !important;
+   color: #000;
+    height: 2em;
+    left: 0;
+    position: relative; 
+    font-size: small;
+    width:100%;
+    }
+   
 }

@@ -168,11 +168,12 @@ color: #000 !important;
 
 /*-----------services-----------------*/
 .services{
+    text-align: justify !important;
    height:100vh;
     padding: 4%; 
 }
 .services h4 b{
-    text-align: justify;
+    text-align: justify !important;
   color: #901E23;
 }
 .services h5{
@@ -193,22 +194,23 @@ color: #000 !important;
     width: 40%;
 }
 .services-margin-text-vestel{
-    text-align: justify;
+    text-align: justify !important;
    
     margin-bottom: 15% !important;
 }
 .services-margin-text-bbErbil{
-    text-align: justify;
+    text-align: justify !important;
     margin-top: 8%;
     margin-bottom: 8%;
 }
 .services-margin-text{
+    text-align: justify !important;
     margin-top: 11%;
     margin-bottom: 11%;
 }
 /*-------------end of services-----------------*/
 /*-------------companies-------------------*/
-.companies{
+/* .companies{
     height: 100vh;
     padding: 5%;
 }
@@ -262,19 +264,19 @@ color: #000 !important;
         opacity: 1;
         margin-left:5%;
     }
-}
+} */
 /*------------end of companies-------------*/
 
 /*-------------CEO-----------------------*/
 .ceo{
      
    
-    height: 50vh;
+    height: 60vh;
     padding: 5%;
 }
 #circle-img{
     width: 50%;
-   height: 70%;
+   height: auto;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
