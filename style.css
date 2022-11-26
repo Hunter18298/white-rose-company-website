@@ -213,6 +213,12 @@ background-position: center;
         transform: rotateY(360deg)
     }
 }
+/*----------------------------*/
+.carousel-item img{
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
 /*------------main banner------------*/
 /* .main-banner h4{ display: block;
     font-size: 2rem;
@@ -455,7 +461,14 @@ footer h5 a:hover{
     text-align: justify;
     color: #901E23;
 }
-
+/*----------------ipad pro -------------------------*/
+@media screen and (max-width:1100px) {
+          .carousel-item img{
+    width: 100%;
+    background-size: cover;
+    height: 40vh;
+}
+}
 /* Extra small devices (phones, up to 480px) */
 @media screen and (max-width: 767px) {
      .banner-text{
@@ -463,6 +476,11 @@ footer h5 a:hover{
         width: 80%;
 
     }
+      .carousel-item img{
+    width: 100%;
+    background-size: cover;
+    height: 40vh;
+}
     .vertical {
         display: none;
         
@@ -470,7 +488,7 @@ footer h5 a:hover{
     }
       .bottom-banner{
         padding: 4%;
-        height: 35% ;
+        height: 25% ;
         justify-content: start;
     }
     .bottom-banner h4{
@@ -540,6 +558,11 @@ footer h5 a:hover{
     .banner-text{
         text-align: start;
     }
+    .carousel-item img{
+    width: 100%;
+    background-size: cover;
+    height: 40vh;
+}
     .about-us{
         height: 100%;
     }
